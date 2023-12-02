@@ -4,8 +4,8 @@ print("please guess a number between 1 and 10: ")
 
 #best so far in this code
 
-while (True):
-    number= int(input())
+while True:
+    number = int(input())
     if number == answer:
         print("Great!!")
         break
@@ -56,3 +56,16 @@ while (True):
 #         [print("sorry you guessed incorrect")]
 # else:
 #     print("congrats, you got it")
+
+
+def sum_eo(n, t):
+    if t == 'e':
+        start = 2
+    elif t == 'o':
+        start = 1
+    else:
+        return -1
+
+    return sum(range(start, n, 2))
+
+print(sum_eo(12, 'o'))
