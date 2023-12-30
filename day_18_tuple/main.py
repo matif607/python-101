@@ -78,7 +78,9 @@ direction = [0, 90, 180, 270, 360]
 
 leonard.speed("fastest")
 
+
 # alternative method of drawing a spirograph
+
 def draw_spirograph(tilt):
     for _ in range(int(360 / tilt)):
         change_color()
@@ -86,10 +88,7 @@ def draw_spirograph(tilt):
         leonard.setheading(leonard.heading() + tilt)
 
 
-
 draw_spirograph(5)
-
-
 
 screen = Screen()
 screen.exitonclick()
